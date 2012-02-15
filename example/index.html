@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Page Title</title>
+	<style type="text/css">
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+}
+select {
+	font-size:1em;
+	width:150px;
+}
+select.transformed {
+	height:40px;
+	padding:10px 0 10px 10px;
+	position: absolute;
+	-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+	filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+	opacity: 0;
+	-webkit-appearance:menulist-text;
+	zoom:1;
+}
+.customSelectBox {
+	background:#fff url('images/select-arrow.png') center right no-repeat;
+	border:1px solid #c7c8cb;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+	-webkit-box-shadow: inset 2px 0px 5px 0px rgba(00, 00, 00, .15);
+	-moz-box-shadow: inset 2px 0px 5px 0px rgba(00, 00, 00, .15);
+	box-shadow: inset 2px 0px 5px 0px rgba(00, 00, 00, .15);
+	height:20px;
+	padding:10px 0 10px 10px;
+	width:140px;
+}
+.customSelectBoxInner {
+}
+.customSeletBox.changed {
+	
+}
+	</style>
+</head>
+<body>
+	<h1>Custom Select boxes</h1>
+	<form>
+		<fieldset>
+			<label for="unstyledSelect">Unstyled:</label>
+			<select name="unstyledSelect" id="unstyledSelect">
+				<option value="John">John</option>
+				<option value="Paul">Paul</option>
+				<option value="George">George</option>
+				<option value="Ringo">Ringo</option>
+			</select>
+		</fieldset>
+		<fieldset>
+			<label for="styledSelect">Styled:</label>
+			<select name="styledSelect" id="styledSelect" class="customSelect">
+				<option value="John">John</option>
+				<option value="Paul">Paul</option>
+				<option value="George">George</option>
+				<option value="Ringo">Ringo</option>
+			</select>
+		</fieldset>			
+	</form>
+	<script src="js/jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.custom-select.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/script.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
