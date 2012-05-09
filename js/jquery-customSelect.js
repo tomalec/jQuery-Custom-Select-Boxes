@@ -4,7 +4,7 @@
 	'use strict';
 	$.fn.extend({
 		customSelect: function () {
-			if (!$.browser.msie || ($.browser.msie && $.browser.msie.version <= 6)) {
+			if (!$.browser.msie || ($.browser.msie && $.browser.msie.version >= 6)) {
 				return this.each(function () {
 					$(this).after('<span class="customSelectBox"><span class="customSelectBoxInner">' + $(this).find(':selected').text() + '</span></span>').css({
 						fontSize: $(this).next().css('font-size')
